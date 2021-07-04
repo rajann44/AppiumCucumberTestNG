@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.qa.runners.MyRunnerTest" time="26.208" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--plugin html:target/ForAndroid_Report/cucumber-report-android.html"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/rajanchaudhary/Desktop/AppiumCucumber"/>
+    <property name="udid" value="emulator-5554"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/rajanchaudhary/Desktop/AppiumCucumber"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="chromeDriverPort" value="11000"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/hb/0q6xky8x0dj4wg6ddy7q0wsc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Volumes/sd-card/Tools/apache-maven-3.8.1/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/rajanchaudhary/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Volumes/sd-card/Tools/apache-maven-3.8.1/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="platformName" value="Android"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="library.jansi.path" value="/Volumes/sd-card/Tools/apache-maven-3.8.1/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/rajanchaudhary"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="systemPort" value="10000"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="rajanchaudhary"/>
+    <property name="java.class.path" value="/Volumes/sd-card/Tools/apache-maven-3.8.1/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--plugin html:target/ForAndroid_Report/cucumber-report-android.html -DplatformName=Android -Dudid=emulator-5554 -DdeviceName=Google Pixel 2 -DsystemPort=10000 -DchromeDriverPort=11000"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Volumes/sd-card/Tools/apache-maven-3.8.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="deviceName" value="Google Pixel 2"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="Login scenarios" name="Login with invalid username" time="8.023"/>
+  <testcase classname="Login scenarios" name="Login with valid username and password" time="18.185">
+    <error message="Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView}) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:76)
+	at com.qa.pages.BasePage.getText(BasePage.java:89)
+	at com.qa.pages.ProductsPage.getTitle(ProductsPage.java:21)
+	at com.qa.stepdef.LoginStepDef.iShouldSeeProductsPageWithTitle(LoginStepDef.java:34)
+	at ✽.I should see Products page with title &quot;PRODUCTS&quot;(file:///Users/rajanchaudhary/Desktop/AppiumCucumber/src/test/resources/Login.feature:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:76)
+	at com.qa.pages.BasePage.getText(BasePage.java:89)
+	at com.qa.pages.ProductsPage.getTitle(ProductsPage.java:21)
+	at com.qa.stepdef.LoginStepDef.iShouldSeeProductsPageWithTitle(LoginStepDef.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@43bdaa1b (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 62 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Rajans-MacBook-Air.local&apos;, ip: &apos;2402:e280:3e07:1c:358c:6a39:2ed8:1080%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 64 more
+</error>
+    <system-out>
+@testReg
+Scenario Outline: Login with valid username and password # src/test/resources/Login.feature:31
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/appium/start_recording_screen&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.startRecordingScreen() with args: [null,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Getting IDs of all &apos;screenrecord&apos; processes
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)&apos;
+&amp;#27;[35m[AndroidDriver]&amp;#27;[39m Screen recording has not been previously started by Appium. There is nothing to stop
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Getting IDs of all &apos;screenrecord&apos; processes
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Building screenrecord process with the command line: adb -P 5037 -s emulator-5554 shell screenrecord --time-limit 180 /sdcard/6b0f3e39.mp4
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell &quot;[ -e &apos;/sdcard/6b0f3e39.mp4&apos; ] &amp;&amp; echo __PASS__&quot;&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell &quot;[ -e &apos;/sdcard/6b0f3e39.mp4&apos; ] &amp;&amp; echo __PASS__&quot;&apos;
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.startRecordingScreen() result: &quot;&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/appium/start_recording_screen &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m571 ms - 12&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Username&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Username&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Username&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3&quot;,&quot;ELEMENT&quot;:&quot;3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m33 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3/displayed&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.elementDisplayed() with args: [&quot;3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3/attribute/displayed&apos; to command name &apos;getAttribute&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [GET /element/3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3/attribute/displayed] to [GET http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3/attribute/displayed] with no body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:&quot;true&quot;}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.elementDisplayed() result: true
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/3432d0a3-1ebb-4b42-b1c1-9d9a9aadfad3/displayed &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m26 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Username&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Username&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Username&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;,&quot;ELEMENT&quot;:&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m25 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/d2f2bc79-52df-40fa-888c-ec64492d82bc/clear&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;id&quot;:&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.clear() with args: [&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/d2f2bc79-52df-40fa-888c-ec64492d82bc/clear&apos; to command name &apos;clear&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element/d2f2bc79-52df-40fa-888c-ec64492d82bc/clear] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/d2f2bc79-52df-40fa-888c-ec64492d82bc/clear] with body: {&quot;elementId&quot;:&quot;d2f2bc79-52df-40fa-888c-ec64492d82bc&quot;}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:null}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.clear() result: null
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/d2f2bc79-52df-40fa-888c-ec64492d82bc/clear &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m29 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m5 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Username&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Username&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Username&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;9d758781-8ce5-410e-9311-8b4de7870177&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;9d758781-8ce5-410e-9311-8b4de7870177&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;9d758781-8ce5-410e-9311-8b4de7870177&quot;,&quot;ELEMENT&quot;:&quot;9d758781-8ce5-410e-9311-8b4de7870177&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m600 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/9d758781-8ce5-410e-9311-8b4de7870177/displayed&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.elementDisplayed() with args: [&quot;9d758781-8ce5-410e-9311-8b4de7870177&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/9d758781-8ce5-410e-9311-8b4de7870177/attribute/displayed&apos; to command name &apos;getAttribute&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [GET /element/9d758781-8ce5-410e-9311-8b4de7870177/attribute/displayed] to [GET http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/9d758781-8ce5-410e-9311-8b4de7870177/attribute/displayed] with no body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:&quot;true&quot;}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.elementDisplayed() result: true
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/9d758781-8ce5-410e-9311-8b4de7870177/displayed &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m17 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+[INFO ] 2021-07-04 20:00:44.349 com.qa.pages.BasePage:71 - login with standard_user
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Username&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Username&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Username&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;,&quot;ELEMENT&quot;:&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m36 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/7b2f8f2b-ec7b-4901-90cc-aa87eb184368/value&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;id&quot;:&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;,&quot;text&quot;:&quot;standard_user&quot;,&quot;value&quot;:[&quot;s&quot;,&quot;t&quot;,&quot;a&quot;,&quot;n&quot;,&quot;d&quot;,&quot;a&quot;,&quot;r&quot;,&quot;d&quot;,&quot;_&quot;,&quot;u&quot;,&quot;s&quot;,&quot;e&quot;,&quot;r&quot;]}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.setValue() with args: [[&quot;s&quot;,&quot;t&quot;,&quot;a&quot;,&quot;n&quot;,&quot;d&quot;,&quot;a&quot;,&quot;r&quot;,&quot;d&quot;,&quot;_&quot;,&quot;u&quot;,&quot;s&quot;,&quot;e&quot;,&quot;r&quot;],&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/7b2f8f2b-ec7b-4901-90cc-aa87eb184368/value&apos; to command name &apos;setValue&apos;
+[debug] &amp;#27;[35m[Protocol Converter]&amp;#27;[39m Added &apos;value&apos; property [&quot;s&quot;,&quot;t&quot;,&quot;a&quot;,&quot;n&quot;,&quot;d&quot;,&quot;a&quot;,&quot;r&quot;,&quot;d&quot;,&quot;_&quot;,&quot;u&quot;,&quot;s&quot;,&quot;e&quot;,&quot;r&quot;] to &apos;setValue&apos; request body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element/7b2f8f2b-ec7b-4901-90cc-aa87eb184368/value] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/7b2f8f2b-ec7b-4901-90cc-aa87eb184368/value] with body: {&quot;elementId&quot;:&quot;7b2f8f2b-ec7b-4901-90cc-aa87eb184368&quot;,&quot;text&quot;:&quot;standard_user&quot;,&quot;replace&quot;:false,&quot;value&quot;:[&quot;s&quot;,&quot;t&quot;,&quot;a&quot;,&quot;n&quot;,&quot;d&quot;,&quot;a&quot;,&quot;r&quot;,&quot;d&quot;,&quot;_&quot;,&quot;u&quot;,&quot;s&quot;,&quot;e&quot;,&quot;r&quot;]}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:null}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.setValue() result: null
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/7b2f8f2b-ec7b-4901-90cc-aa87eb184368/value &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m618 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+  When I enter username as &quot;standard_user&quot;               # com.qa.stepdef.LoginStepDef.iEnterUsernameAs(java.lang.String)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Password&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Password&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Password&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;58a4a11f-9e6c-4d7d-a73a-413a51f71e00&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;58a4a11f-9e6c-4d7d-a73a-413a51f71e00&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;58a4a11f-9e6c-4d7d-a73a-413a51f71e00&quot;,&quot;ELEMENT&quot;:&quot;58a4a11f-9e6c-4d7d-a73a-413a51f71e00&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m491 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/58a4a11f-9e6c-4d7d-a73a-413a51f71e00/displayed&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.elementDisplayed() with args: [&quot;58a4a11f-9e6c-4d7d-a73a-413a51f71e00&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/58a4a11f-9e6c-4d7d-a73a-413a51f71e00/attribute/displayed&apos; to command name &apos;getAttribute&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [GET /element/58a4a11f-9e6c-4d7d-a73a-413a51f71e00/attribute/displayed] to [GET http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/58a4a11f-9e6c-4d7d-a73a-413a51f71e00/attribute/displayed] with no body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:&quot;true&quot;}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.elementDisplayed() result: true
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/58a4a11f-9e6c-4d7d-a73a-413a51f71e00/displayed &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m15 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Password&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Password&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Password&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;,&quot;ELEMENT&quot;:&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m27 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/27e42fa6-0277-4fe5-8dad-fdae9491704c/clear&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;id&quot;:&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.clear() with args: [&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/27e42fa6-0277-4fe5-8dad-fdae9491704c/clear&apos; to command name &apos;clear&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element/27e42fa6-0277-4fe5-8dad-fdae9491704c/clear] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/27e42fa6-0277-4fe5-8dad-fdae9491704c/clear] with body: {&quot;elementId&quot;:&quot;27e42fa6-0277-4fe5-8dad-fdae9491704c&quot;}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:null}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.clear() result: null
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/27e42fa6-0277-4fe5-8dad-fdae9491704c/clear &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m26 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Password&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Password&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Password&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;09a42250-3a31-410e-8a37-efddb1b23f5f&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;09a42250-3a31-410e-8a37-efddb1b23f5f&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;09a42250-3a31-410e-8a37-efddb1b23f5f&quot;,&quot;ELEMENT&quot;:&quot;09a42250-3a31-410e-8a37-efddb1b23f5f&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m38 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/09a42250-3a31-410e-8a37-efddb1b23f5f/displayed&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.elementDisplayed() with args: [&quot;09a42250-3a31-410e-8a37-efddb1b23f5f&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/09a42250-3a31-410e-8a37-efddb1b23f5f/attribute/displayed&apos; to command name &apos;getAttribute&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [GET /element/09a42250-3a31-410e-8a37-efddb1b23f5f/attribute/displayed] to [GET http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/09a42250-3a31-410e-8a37-efddb1b23f5f/attribute/displayed] with no body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:&quot;true&quot;}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.elementDisplayed() result: true
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/09a42250-3a31-410e-8a37-efddb1b23f5f/displayed &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m446 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+[INFO ] 2021-07-04 20:00:46.129 com.qa.pages.BasePage:71 - password is secret_sauce
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-Password&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-Password&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-Password&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;,&quot;ELEMENT&quot;:&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m26 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0/value&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;id&quot;:&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;,&quot;text&quot;:&quot;secret_sauce&quot;,&quot;value&quot;:[&quot;s&quot;,&quot;e&quot;,&quot;c&quot;,&quot;r&quot;,&quot;e&quot;,&quot;t&quot;,&quot;_&quot;,&quot;s&quot;,&quot;a&quot;,&quot;u&quot;,&quot;c&quot;,&quot;e&quot;]}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.setValue() with args: [[&quot;s&quot;,&quot;e&quot;,&quot;c&quot;,&quot;r&quot;,&quot;e&quot;,&quot;t&quot;,&quot;_&quot;,&quot;s&quot;,&quot;a&quot;,&quot;u&quot;,&quot;c&quot;,&quot;e&quot;],&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0/value&apos; to command name &apos;setValue&apos;
+[debug] &amp;#27;[35m[Protocol Converter]&amp;#27;[39m Added &apos;value&apos; property [&quot;s&quot;,&quot;e&quot;,&quot;c&quot;,&quot;r&quot;,&quot;e&quot;,&quot;t&quot;,&quot;_&quot;,&quot;s&quot;,&quot;a&quot;,&quot;u&quot;,&quot;c&quot;,&quot;e&quot;] to &apos;setValue&apos; request body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element/ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0/value] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0/value] with body: {&quot;elementId&quot;:&quot;ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0&quot;,&quot;text&quot;:&quot;secret_sauce&quot;,&quot;replace&quot;:false,&quot;value&quot;:[&quot;s&quot;,&quot;e&quot;,&quot;c&quot;,&quot;r&quot;,&quot;e&quot;,&quot;t&quot;,&quot;_&quot;,&quot;s&quot;,&quot;a&quot;,&quot;u&quot;,&quot;c&quot;,&quot;e&quot;]}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:null}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.setValue() result: null
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/ed9f2bf6-dd83-4fec-b344-1183ffe4d0a0/value &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m135 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+  And I enter password as &quot;secret_sauce&quot;                 # com.qa.stepdef.LoginStepDef.iEnterPasswordAs(java.lang.String)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-LOGIN&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-LOGIN&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-LOGIN&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;74e69a45-e3b2-4592-9231-e43657045341&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;74e69a45-e3b2-4592-9231-e43657045341&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;74e69a45-e3b2-4592-9231-e43657045341&quot;,&quot;ELEMENT&quot;:&quot;74e69a45-e3b2-4592-9231-e43657045341&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m502 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/74e69a45-e3b2-4592-9231-e43657045341/displayed&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.elementDisplayed() with args: [&quot;74e69a45-e3b2-4592-9231-e43657045341&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/74e69a45-e3b2-4592-9231-e43657045341/attribute/displayed&apos; to command name &apos;getAttribute&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [GET /element/74e69a45-e3b2-4592-9231-e43657045341/attribute/displayed] to [GET http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/74e69a45-e3b2-4592-9231-e43657045341/attribute/displayed] with no body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:&quot;true&quot;}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.elementDisplayed() result: true
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/74e69a45-e3b2-4592-9231-e43657045341/displayed &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m17 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+[INFO ] 2021-07-04 20:00:46.851 com.qa.pages.BasePage:54 - press login button
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m1 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;test-LOGIN&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;test-LOGIN&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;test-LOGIN&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;}}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;,&quot;ELEMENT&quot;:&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;}
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m41 ms - 137&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/d779507c-2fb9-44f2-88c8-e01d90269bfc/click&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;id&quot;:&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.click() with args: [&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element/d779507c-2fb9-44f2-88c8-e01d90269bfc/click&apos; to command name &apos;click&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element/d779507c-2fb9-44f2-88c8-e01d90269bfc/click] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element/d779507c-2fb9-44f2-88c8-e01d90269bfc/click] with body: {&quot;element&quot;:&quot;d779507c-2fb9-44f2-88c8-e01d90269bfc&quot;}
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:null}
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.click() result: null
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element/d779507c-2fb9-44f2-88c8-e01d90269bfc/click &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m77 ms - 14&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+  And I login                                            # com.qa.stepdef.LoginStepDef.iLogin()
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m69 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m1830 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m3 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m80 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m81 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m88 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m87 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m88 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m92 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m86 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m93 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m67 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m82 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m72 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m68 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getCurrentContext() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getCurrentContext() result: &quot;NATIVE_APP&quot;
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/context &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m2 ms - 22&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m115 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m64 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m97 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{&quot;using&quot;:&quot;xpath&quot;,&quot;value&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.findElement() with args: [&quot;xpath&quot;,&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[debug] &amp;#27;[35m[BaseDriver]&amp;#27;[39m Waiting up to 0 ms for condition
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/element&apos; to command name &apos;findElement&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [POST /element] to [POST http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/element] with body: {&quot;strategy&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//android.widget.ScrollView[@content-desc=\&quot;test-PRODUCTS\&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+&amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 404: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:91)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:68)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:41)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:261)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:255)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerCont...
+[debug] &amp;#27;[35m[W3C]&amp;#27;[39m Matched W3C error code &apos;no such element&apos; to NoSuchElementError
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrEls (/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at runMicrotasks (&lt;anonymous&gt;)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at processTicksAndRejections (node:internal/process/task_queues:94:5)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/element &amp;#27;[39m&amp;#27;[33m404&amp;#27;[39m &amp;#27;[90m64 ms - 818&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+  Then I should see Products page with title &quot;PRODUCTS&quot;  # com.qa.stepdef.LoginStepDef.iShouldSeeProductsPageWithTitle(java.lang.String)
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:76)
+	at com.qa.pages.BasePage.getText(BasePage.java:89)
+	at com.qa.pages.ProductsPage.getTitle(ProductsPage.java:21)
+	at com.qa.stepdef.LoginStepDef.iShouldSeeProductsPageWithTitle(LoginStepDef.java:34)
+	at ✽.I should see Products page with title &quot;PRODUCTS&quot;(file:///Users/rajanchaudhary/Desktop/AppiumCucumber/src/test/resources/Login.feature:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:76)
+	at com.qa.pages.BasePage.getText(BasePage.java:89)
+	at com.qa.pages.ProductsPage.getTitle(ProductsPage.java:21)
+	at com.qa.stepdef.LoginStepDef.iShouldSeeProductsPageWithTitle(LoginStepDef.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@43bdaa1b (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 62 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.ScrollView[@content-desc=&quot;test-PRODUCTS&quot;]/preceding-sibling::android.view.ViewGroup/android.widget.TextView})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Rajans-MacBook-Air.local&apos;, ip: &apos;2402:e280:3e07:1c:358c:6a39:2ed8:1080%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 64 more
+
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mGET&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/screenshot&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.getScreenshot() with args: [&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Matched &apos;/screenshot&apos; to command name &apos;getScreenshot&apos;
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Proxying [GET /screenshot] to [GET http://127.0.0.1:10000/wd/hub/session/de2cc2dd-4a80-471a-a4c2-b0476cb6dc91/screenshot] with no body
+[debug] &amp;#27;[35m[WD Proxy]&amp;#27;[39m Got response with status 200: {&quot;sessionId&quot;:&quot;de2cc2dd-4a80-471a-a4c2-b0476cb6dc91&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABDgAAAisCAYAAACtR1KuAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAACAASURBVHic7N13cFznfTf673PKVvRKFAIgQBLsYJNIUYWSWCRaoSjJlh2Z4yK/iSdO\nZuJkXnuSeK6d5ng8TjIZ32SuJ+MUyUWxdF9dFcqiJVISmwgWkSIJEoUAQXSi9+2n3D8OsCJItF3s\nLgDp+5nRiFicPedZYHex53t+z+8R3/3ud00QERERERERES1i0nwPgIiIiIiIiIhorhhwEBERERER\nEdGix4CDiIiIiIiIiBY9BhxEREREREREtOgx4CAiIiIiIiKiRY8BBxEREREREREtegw4iIiIiIiI\niGjRY8BBRERERERERIseAw4iIiIiIiIiWvQYcBARERERERHRoseAg4iIiIiIiIgWPQYcRERERERE\nRLToKfM9AFo8hBDIyMjAzp07sXLlSqSnp0+6nWEY6Orqwscff4yPPvoIXq8XpmkmeLTxI0kSZFkO\nf61p2qfq8RERERERES1G4rvf/S7PzGhKQggoioKnn34aGzduhCzLEELM+v6macLv9+PIkSP48MMP\nF10QMP74nU4nVFWFqqpwuVzhcEfXdfT19SEQCCAUCiEYDCIQCEDTtHkeORERERER0WcLAw6akiRJ\neP7557Fy5UoAiCjYuNN4sPFXf/VXMAwjJuOLJ0mS4HK5kJycjPz8fKxevRqFhYXIyMiYdHtN09DV\n1YXm5mbU1dWhu7sbHo8Hfr8/wSOPnfFwx2azRXV/wzDg9/sXXahFRERERIuf0+nEkiVLkJKSArfb\nDafTCZ/PB4/Hg+HhYXR2dsLn8833MGMuPz8fHR0dCTnW1q1bp6zqH3fkyJGEjGUcp6jQpEpLS/HN\nb34TkhSbNi3j4cjWrVtx7ty5...
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABDgAAAisCAYAAACtR1KuAAAAAXNSR0IArs4c6QAAAARzQklUCAgI\nCHwIZIgAACAASURBVHic7N13cFznfTf673PKVvRKFAIgQBLsYJNIUYWSWCRaoSjJlh2Z4yK/iSdO\nZuJkXnuSeK6d5ng8TjIZ32SuJ+MUyUWxdF9dFcqiJVISmwgWkSIJEoUAQXSi9+2n3D8OsCJItF3s\nLgDp+5nRiFicPedZYHex53t+z+8R3/3ud00QERERERERES1i0nwPgIiIiIiIiIhorhhwEBERERER\nEdGix4CDiIiIiIiIiBY9BhxEREREREREtOgx4CAiIiIiIiKiRY8BBxEREREREREtegw4iIiIiIiI\niGjRY8BBRERERERERIseAw4iIiIiIiIiWvQYcBARERERERHRoseAg4iIiIiIiIgWPQYcRERERERE\nRLToKfM9AFo8hBDIyMjAzp07sXLlSqSnp0+6nWEY6Orqwscff4yPPvoIXq8XpmkmeLTxI0kSZFkO\nf61p2qfq8RERERERES1G4rvf/S7PzGhKQggoioKnn34aGzduhCzLEELM+v6macLv9+PIkSP48MMP\nF10QMP74nU4nVFWFqqpwuVzhcEfXdfT19SEQCCAUCiEYDCIQCEDTtHkeORERERER0WcLAw6akiRJ\neP7557Fy5UoAiCjYuNN4sPFXf/VXMAwjJuOLJ0mS4HK5kJycjPz8fKxevRqFhYXIyMiYdHtN09DV\n1YXm5mbU1dWhu7sbHo8Hfr8/wSOPnfFwx2azRXV/wzDg9/sXXahFRERERIuf0+nEkiVLkJKSArfb\nDafTCZ/PB4/Hg+HhYXR2dsLn8833MGMuPz8fHR0dCTnW1q1bp6zqH3fkyJGEjGUcp6jQpEpLS/HN\nb34TkhSbNi3j4cjWrVtx7ty5mOwzHiRJgsPhQGZmJu655x5s3rx5Vif4iqKgoKAABQUFuO+++zA4\nOIjKyk...
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- GET /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/screenshot &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m859 ms - 1625858&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+
+    Embedding Login with valid username and password [image/png 1188117 bytes]
+
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m--&gt;&amp;#27;[39m &amp;#27;[37mPOST&amp;#27;[39m &amp;#27;[37m/wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/appium/stop_recording_screen&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m{}&amp;#27;[39m
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Calling AppiumDriver.stopRecordingScreen() with args: [null,&quot;267bde52-4e48-4ce8-a011-8600fbf9c783&quot;]
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Getting IDs of all &apos;screenrecord&apos; processes
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell kill -2 4307&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Getting IDs of all &apos;screenrecord&apos; processes
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Getting IDs of all &apos;screenrecord&apos; processes
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \(\[\[:blank:\]\]\|\^\)screenrecord\(\[\[:blank:\]\]\|\$\)&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 pull /sdcard/6b0f3e39.mp4 /var/folders/hb/0q6xky8x0dj4wg6ddy7q0wsc0000gn/T/202164-3051-3y9v97.vfsks/6b0f3e39.mp4&apos;
+[debug] &amp;#27;[35m[ADB]&amp;#27;[39m Running &apos;/Users/rajanchaudhary/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell rm -rf /sdcard/6b0f3e39.mp4&apos;
+[debug] &amp;#27;[35m[AndroidDriver]&amp;#27;[39m The size of the resulting screen recording is 763.78 KB
+[debug] &amp;#27;[35m[W3C (267bde52)]&amp;#27;[39m Responding to client with driver.stopRecordingScreen() result: &quot;AAAAGGZ0eXBtcDQyAAAAAGlzb21tcDQyAAAGA21vb3YAAABsbXZoZAAAAADdB3aj3Qd2owAAJxAAAt0ZAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAB2bWV0YQAAACFoZGxyAAAAAAAAAABtZHRhAAAAAAAAAAAAAAAAAAAAACtrZXlzAAAAAAAAAAEAAAAbbWR0YWNvbS5hbmRyb2lkLnZlcnNpb24AAAAiaWxzdAAAABoAAAABAAAAEmRhdGEAAAABAAAAADExAAADc3RyYWsAAABcdGtoZAAAAAfdB3aj3Qd2owAAAAEAAAAAAALdGQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAEOAAACKwAAAAAAw9tZGlhAAAAIG1kaGQAAAAA3Qd2o90HdqMAAV+QABnF3gAAAAAAAAAsaGRscgAAAAAAAAAAdmlkZQAAAAAAAAAAAAAAAFZpZGVvSGFuZGxlAAAAArttaW5mAAAAFHZtaGQAAAABAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAAJ7c3RibAAAALdzdHNkAAAAAAAAAAEAAACnYXZjMQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQ4CKwASAAAAEgAAAAAAAAAAQAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgABj//wAAAC5hdmNDAULAMv/hABVnQsAyjWgEQBF+W5CAAAADA8IhGoABAAZozgGoNcgAAAAQcGFzcAABAAAAAQAAAAAAE2NvbHJuY2x4AAEAAQABAAAAALhzdHRzAAAAAAAAABUAAAABAACjSQAAAAEAABhQAAAAAQAA3Q4AAAABAADNMAAAAAEAABsEAAAAAQAAx8AAAAAB...
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[37m&lt;-- POST /wd/hub/session/267bde52-4e48-4ce8-a011-8600fbf9c783/appium/stop_recording_screen &amp;#27;[39m&amp;#27;[32m200&amp;#27;[39m &amp;#27;[90m862 ms - 1042824&amp;#27;[39m
+&amp;#27;[35m[HTTP]&amp;#27;[39m &amp;#27;[90m&amp;#27;[39m
+[INFO ] 2021-07-04 20:01:01.149 com.qa.utils.VideoManager:38 - video path: Android_Google Pixel 2/Videos/Login with valid username and password.mp4
+</system-out>
+  </testcase>
+</testsuite>

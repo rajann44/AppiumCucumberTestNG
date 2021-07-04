@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="Android_Pixel">
+        <parameter name="platformName" value="Android" />
+        <parameter name="udid" value="emulator-5554" />
+        <parameter name="deviceName" value="Pixel_3a" />
+        <parameter name="systemPort" value="10000" />
+        <parameter name="chromeDriverPort" value="11000" />
+        <classes>
+            <class name="com.qa.runners.AndroidRunnerTest"/>
+        </classes>
+    </test>
+    <test name="IOS_iPhone11">
+        <parameter name="platformName" value="iOS" />
+        <parameter name="udid" value="5098DCF8-A156-4819-8A1D-5FA540B95A3C" />
+        <parameter name="deviceName" value="IPhone_11" />
+        <parameter name="wdaLocalPort" value="10001" />
+        <parameter name="webkitDebugProxyPort" value="11001" />
+        <classes>
+            <class name="com.qa.runners.IOSRunnerTest"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->

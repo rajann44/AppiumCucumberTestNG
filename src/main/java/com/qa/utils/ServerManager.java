@@ -48,7 +48,7 @@ public class ServerManager {
         HashMap<String, String> environment = new HashMap<String, String>();
         environment.put("PATH", "/Users/rajanchaudhary/.rvm/gems/ruby-3.0.1/bin:/Users/rajanchaudhary/.rvm/gems/ruby-3.0.1@global/bin:/Users/rajanchaudhary/.rvm/rubies/ruby-3.0.1/bin:/Users/rajanchaudhary/Documents/apache-maven-3.8.1/bin/usr/local/Cellar/gradle/7.0.2_2/libexec/bin:“/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/bin:/Users/rajanchaudhary/Library/Android/sdk/tools:/Users/rajanchaudhary/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin”:/Volumes/sd-card/Tools/apache-maven-3.8.1/bin:/Users/rajanchaudhary/.rvm/bin" + System.getenv("PATH"));
         environment.put("ANDROID_HOME", "/Users/rajanchaudhary/Library/Android/sdk");
-        environment.put("JAVA_HOME", "/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home");
+        environment.put("JAVA_HOME", "/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home");
         return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
                 .usingDriverExecutable(new File("/usr/local/bin/node"))
                 .withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))

@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         plugin = {
                 "pretty",
-                "html:target/cucumber-report-android.html",
+                "html:reports/cucumber-report-android.html",
                 "summary",
         },
         features = {"src/test/resources"},
